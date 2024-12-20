@@ -1,91 +1,178 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "DataOS Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://www.themoderndatacompany.com/"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#1E88E5",
+    "light": "#BBDEFB",
+    "dark": "#0D47A1",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#1565C0",
+      "to": "#2196F3"
+    }
+  },
+  "layout": "topnav",
+  "background": {
+    "style": "gradient"
+  },
+  "font": {
+    "headings": {
+      "family": "Open Sans"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:content@tmdc.io"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Schedule a Demo",
+    "url": "https://www.themoderndatacompany.com/schedule-a-demo"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "APIs and SDKs",
+      "url": "api-and-sdk"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
+  "primaryTab": {
+    "name": "Home"
+  },
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
     {
       "name": "Community",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://moderndata101.com/"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://moderndata101.substack.com/"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "getting_started/introduction",
+        {
+          "group": "Persona",
+          "pages": [
+            "getting_started/data_product_consumer",
+            "getting_started/data_product_developer",
+            "getting_started/operator"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Data Product",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "data_product/introduction",
+        "data_product/data_product_lifecycle",
+        {
+          "group": "Examples",
+          "pages": [
+            "data_product/examples/product_affinity"
+          ]
+        },
+        "data_product/configurations",
+        "data_product/core_concepts"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
+        "api-and-sdk/introduction"
       ]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-and-sdk/endpoint/get",
+        "api-and-sdk/endpoint/create",
+        "api-and-sdk/endpoint/delete"
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+  "versions": [
+    "v1.22"
+  ],
+  "search": {
+    "location": "top",
+    "prompt": "Search or Ask your queries..."
+  },
+  "feedback": {
+    "thumbsRating": true
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/TheModernDataCo",
+      "facebook": "https://www.facebook.com/themoderndatacompany",
+      "linkedin": "https://www.linkedin.com/company/themoderndatacompany/"
+    },
+    "links": [
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "label": "Resource Hub",
+            "url": "https://www.themoderndatacompany.com/resources"
+          },
+          {
+            "label": "Blog",
+            "url": "https://www.themoderndatacompany.com/blog"
+          },
+          {
+            "label": "Documentation",
+            "url": "https://dataos.info/"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About Us",
+            "url": "https://www.themoderndatacompany.com/company"
+          },
+          {
+            "label": "Newsroom",
+            "url": "https://www.themoderndatacompany.com/newsroom"
+          },
+          {
+            "label": "Careers",
+            "url": "https://www.themoderndatacompany.com/careers"
+          },
+          {
+            "label": "Blog",
+            "url": "https://www.themoderndatacompany.com/blog"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "url": "https://www.themoderndatacompany.com/privacy-policy"
+          },
+          {
+            "label": "Terms of Use",
+            "url": "https://www.themoderndatacompany.com/terms-of-use"
+          }
+        ]
+      }
+    ]
   }
 }

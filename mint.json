@@ -64,30 +64,49 @@
     {
       "group": "Getting Started",
       "pages": [
-        "getting_started/introduction",
-        {
-          "group": "Persona",
-          "pages": [
-            "getting_started/data_product_consumer",
-            "getting_started/data_product_developer",
-            "getting_started/operator"
-          ]
-        }
+        "getting_started/introduction"
       ]
     },
     {
-      "group": "Data Product",
+      "group": "Lens",
       "pages": [
-        "data_product/introduction",
-        "data_product/data_product_lifecycle",
+        "resources/lens/index",
         {
-          "group": "Examples",
+          "group": "Lens Setup",
           "pages": [
-            "data_product/examples/product_affinity"
+            "resources/lens/lens_model_folder_setup",
+            "resources/lens/optimizing_lens_testing_in_local_development",
+            "resources/lens/lens_deployment"
           ]
         },
-        "data_product/configurations",
-        "data_product/core_concepts"
+        {
+          "group": "Data Modelling",
+          "pages": [
+            "resources/lens/overview",
+            "resources/lens/concepts",
+            "resources/lens/best_practices",
+            "resources/lens/dos_and_donts",
+            "resources/lens/errors"
+          ]
+        },
+        {
+          "group": "Configurations",
+          "pages": [
+            "resources/lens/lens_manifest_attributes",
+            "resources/lens/docker_compose_manifest_attributes"
+          ]
+        },
+        {
+          "group": "Supported Data Sources",
+          "pages": [
+            "resources/lens/data_sources/bigquery",
+            "resources/lens/data_sources/flash",
+            "resources/lens/data_sources/minerva",
+            "resources/lens/data_sources/postgres",
+            "resources/lens/data_sources/awsredshift",
+            "resources/lens/data_sources/themis"
+          ]
+        }
       ]
     },
     {

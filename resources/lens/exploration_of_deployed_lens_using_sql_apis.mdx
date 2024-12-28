@@ -1,4 +1,6 @@
-# Exploration of Lens using SQL APIs
+---
+title: Exploration of Lens using SQL APIs
+---
 
 Lens exposes a PostgreSQL-compatible interface, enabling interaction with the semantic model(Lens) using PostgreSQL syntax. The PostgreSQL client tool `psql` is required to query the database and manage Lens data.
 
@@ -49,21 +51,6 @@ To interact with Lens through PostgreSQL, the following options are available:
 ## Postgresql client (psql)
 
 The `psql` command-line tool is required to interact with Lens through PostgreSQL. Specifically, `postgresql-client-16` must be installed, as this version includes the necessary tools to connect and query the database. 
-
-<!-- 
-Go to the DataOS Home Page click on the Data Product Hub. From here you will be redirected to the Data Product Hub home page. -->
-
-<!-- <center>
-  <img src="/interfaces/data_product_hub/dataos.png" alt="DPH" style="width:40rem; border: 1px solid black;" />
-  <figcaption><i>Data Product Hub on DataOS Home Page</i></figcaption>
-</center>
-
-Here choose the desired Data Product to explore using SQL APIs.For this example we have used Customer360 Now as you click on the Customer360 Data Product
-
-<center>
-  <img src="/interfaces/data_product_hub/dataos.png" alt="DPH" style="width:40rem; border: 1px solid black;" />
-  <figcaption><i>Data Product Hub on DataOS Home Page</i></figcaption>
-</center> -->
 
 ### **Retrieve Lens**
 
@@ -151,7 +138,7 @@ After retrieving the name of the Lens, the following steps describe how to conne
     ```bash
     psql -h tcp.liberal-monkey.dataos.app -p 6432 -U iamgroot -d lens:curriculum:product360
     ```
-    Replace <context> with the appropriate context for the deployed Lens. For example, in `liberal-monkey.dataos.app`, the context is `liberal-monkey`. Additionally, replace the workspace name with the name of the actual workspace where Lens is deployed. For instance, `public`, `sandbox` etc.
+    Replace `<context>` with the appropriate context for the deployed Lens. For example, in `liberal-monkey.dataos.app`, the context is `liberal-monkey`. Additionally, replace the workspace name with the name of the actual workspace where Lens is deployed. For instance, `public`, `sandbox` etc.
 
 3. When prompted, enter the DataOS API Key as the password.
 
